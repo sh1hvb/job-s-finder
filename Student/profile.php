@@ -68,6 +68,7 @@ if (isset($_POST['update'])) {
             $message = "Enter valid password";
             echo "<script type='text/javascript'> alert('$message'); window.location.href='profile.php'; </script>";
         }
+
     } else {
         echo "Email not matched";
     }

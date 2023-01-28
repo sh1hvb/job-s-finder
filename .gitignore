@@ -1,8 +1,6 @@
-
-.php-cs-fixer
-/database
-/.scannerwork
-/.vscode
-/.idea
-**/.php-cs-fixer.cache
-*sonar-project.properties
+.scannerwork/
+.idea/
+vendor/
+Database/
+gitgraph.png
+sonar-project.properties

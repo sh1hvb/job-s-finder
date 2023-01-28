@@ -148,7 +148,7 @@ if (isset($_POST['logout'])) {
                                     <?php
                                 }
                             }
-                        } elseif (isset($_POST['submit'])) {
+                        } else if (isset($_POST['submit'])) {
                             $con = mysqli_connect("localhost", "root", "", "placement");
                             $search = $con->real_escape_string($_POST['search']);
 
@@ -190,7 +190,7 @@ if (isset($_POST['logout'])) {
 
 
                     extracted();
-?>
+                    ?>
 
 
                 </div>

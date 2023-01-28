@@ -1,6 +1,0 @@
-projectKey=jbposting
-serverUrl=http://localhost:9000
-serverVersion=9.7.1.62043
-dashboardUrl=http://localhost:9000/dashboard?id=jbposting
-ceTaskId=AYV_mYBlHJS5_AOvQcta
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AYV_mYBlHJS5_AOvQcta

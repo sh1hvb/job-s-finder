@@ -8,6 +8,7 @@
     <link rel="icon" href="..\images\favicon.ico" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
 
@@ -38,7 +39,9 @@ if (isset($_POST['logout'])) {
     <nav>
         <ul class="main-nav">
             <li>
-                <span style="color: #949695;"><?php echo "Welcome " . $_SESSION['fname'] . " " . $_SESSION['lname'] . "&emsp;&emsp;"; ?></span>
+   <span style="color: #949695;"><?php echo "Welcome " .
+                 $_SESSION['fname'] . " " . $_SESSION['lname'] . "&emsp;&emsp;"; ?></span>
+
             </li>
         </ul>
     </nav>
@@ -59,7 +62,12 @@ if (isset($_POST['logout'])) {
                         Job</a>
                 </li>
                 <li class="active">
+
+
+
+
                     <a href="applied-jobs.php"><em style="font-size:24px" class="fa fa-check-circle-o"></em>&emsp;Applied
+
                         Jobs</a>
                 </li>
             </ul>
@@ -67,15 +75,11 @@ if (isset($_POST['logout'])) {
                 <button type="submit" name="logout" class="btn btn-info" style="margin: 10px 0 0 64px;">Logout</button>
             </form>
         </div>
-
-
         <div class="mainpage">
             <div class="hd_title">Applied Jobs</div>
 
             <div class="main" style="padding-bottom: 520px">
                 <div class="col-md-9 bg-white padding-2">
-
-
                     <?php
                     try {
                         $con = new PDO("mysql:host=localhost;dbname=placement", "root", "");

@@ -117,11 +117,11 @@ if (isset($_POST['apply'])) {
 
                         <?php
                         $con = mysqli_connect("localhost", "root", "", "placement");
-$sql = "SELECT * FROM company Order By cname ASC";
-$result = $con->query($sql);
-if ($result->num_rows > 0) {
-    while ($row = $result->fetch_assoc()) {
-        ?>
+                        $sql = "SELECT * FROM company Order By cname ASC";
+                        $result = $con->query($sql);
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                ?>
                                 <div class="col-xs-6 col-sm-6 col-lg-3">
                                     <div class="thumbnail ">
                                         <img src="<?php echo $row['clogo']; ?>" alt="companylogo">
@@ -147,9 +147,9 @@ if ($result->num_rows > 0) {
                                 </div>
 
                                 <?php
-    }
-}
-?>
+                            }
+                        }
+                        ?>
 
 
                     </div>
