@@ -2,3 +2,9 @@
 /.idea/
 /.scannerwork/
 .php-cs-fixer
+**/database
+**/.scannerwork
+**/.vscode
+**/.idea
+**/.php-cs-fixer.cache
+**/sonar-project.properties
